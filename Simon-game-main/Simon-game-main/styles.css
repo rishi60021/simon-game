@@ -1,0 +1,95 @@
+.level {
+  text-align: center;
+  color: #FFE69A;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  animation: animate 1.5s linear infinite;
+  margin: 3%;
+}
+
+.row{
+  margin: 5%;
+  align-items: center;
+}
+
+h4{
+  color: #FFE69A;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+
+.btn {
+  height: 12rem;
+  width: 14rem;
+  border-radius: 10%;
+  border: 4px solid black;
+
+}
+
+.btn:active {
+  transform: translateY(15px);
+}
+
+body {
+  background-color: #293462;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+.space {
+  width: 2rem;
+}
+
+.fa-brands{
+  font-size: 1.3rem;
+  color: #FFE69A;
+}
+
+#red{
+  background-color: #DA1212;
+}
+
+#blue{
+  background-color: #242F9B;
+}
+
+#yellow{
+  background-color: #F7D716;
+}
+
+#green{
+  background-color: #125C13;
+}
+
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+/* it is very efficient to specify device width than specifying viewport height or width */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px){
+  .container{
+    margin-top: 28rem;
+  }
+
+  #footer{
+    margin-top: 42.8rem;
+  }
+}
